@@ -190,10 +190,10 @@
       }
 
       .logo img {
-        height: 80px; /* Aumentado de 55px para 90px */
+        height: 85px; /* Aumentado de 55px para 90px */
         width: auto;
         display: block;
-        margin: 8px 0;
+        margin: 0;
         max-width: none; /* Remove o max-width */
       }
 
@@ -748,7 +748,7 @@
       }
 
       .faq-item.active .faq-answer {
-        max-height: 300px;
+        max-height: 350px;
       }
 
       /* Office Section */
@@ -940,6 +940,7 @@
       .contact-text p,
       .contact-text a {
         color: var(--light-text);
+        margin-bottom: 4px;
       }
 
       .contact-text a:hover {
@@ -1237,8 +1238,8 @@
         }
 
         .appointment-info {
-          flex-direction: column;
-          align-items: flex-start;
+          flex-direction: row;
+          align-items: center;
         }
 
         .specialties-grid {
@@ -1266,11 +1267,13 @@
           </div>
           <div class="nav-links" id="navLinks">
             <a href="#home">Home</a>
-            <a href="#about">Sobre</a>
+            <a href="#about">Sobre mim</a>
             <a href="#specialties">Especialidades</a>
             <a href="#approach">Abordagem</a>
             <a href="#how-it-works">Como Funciona</a>
             <a href="#faq">Dúvidas</a>
+            <a href="#reviews">Depoimentos</a>
+            <a href="#office">Consultório</a>
             <a href="#contact">Contato</a>
           </div>
           <div class="mobile-menu-btn" id="menuBtn">
@@ -1300,7 +1303,7 @@
             </a>
             <div class="appointment-info">
               <i class="fas fa-laptop-medical"></i>
-              <p>Atendimentos online para adolescentes, adultos e idosos.</p>
+              <p>Atendimentos presenciais e online para adultos e idosos.</p>
             </div>
           </div>
           <div class="hero-image">
@@ -1345,8 +1348,8 @@
             <p>
               Olá, sou psicóloga clínica com pós-graduação em Terapia
               Cognitivo-Comportamental (TCC) pela PUC-Minas. Realizo
-              atendimentos clínicos com adolescentes, adultos e idosos, tanto de
-              forma online quanto presencial.
+              atendimentos clínicos com adultos e idosos, tanto de forma online
+              quanto presencial.
             </p>
             <p>
               Minha missão é criar um ambiente seguro e acolhedor onde você
@@ -1389,7 +1392,7 @@
         </div>
         <div class="specialties-grid">
           <!-- Card já existente: Ansiedade -->
-          <div class="specialty-card">
+          <div class="specialty-card" id="ansidade">
             <div class="specialty-icon">
               <i class="fas fa-brain"></i>
             </div>
@@ -1430,21 +1433,6 @@
               negativos e comportamentos comprometidos. O tratamento ajuda a
               pessoa a recuperar sua qualidade de vida, combatendo sintomas e
               promovendo novas perspectivas.
-            </p>
-          </div>
-
-          <!-- NOVO CARD: Adolescência -->
-          <div class="specialty-card">
-            <div class="specialty-icon">
-              <i class="fas fa-child"></i>
-            </div>
-            <h3>Adolescência</h3>
-            <p>
-              A adolescência é um período de intensas transformações físicas,
-              emocionais e sociais. É comum que nesta fase surjam questões
-              relacionadas à identidade, autoestima, relações familiares e
-              sociais. A terapia oferece suporte para que o adolescente possa
-              atravessar esta fase com mais segurança e autoconhecimento.
             </p>
           </div>
 
@@ -1658,9 +1646,9 @@
               <h3>Primeiro Contato</h3>
               <p>
                 O primeiro passo é entrar em contato comigo através do
-                formulário no site, WhatsApp ou e-mail para marcarmos uma sessão
-                inicial. Nesse momento, você pode tirar dúvidas sobre o processo
-                e verificar disponibilidade de horários.
+                formulário no site, WhatsApp, Instagram ou e-mail para marcarmos
+                uma sessão inicial. Nesse momento, você pode tirar dúvidas sobre
+                o processo e verificar disponibilidade de horários.
               </p>
             </div>
           </div>
@@ -1694,7 +1682,7 @@
             <div class="step-content">
               <h3>Sessões Regulares</h3>
               <p>
-                As sessões regulares têm duração de 50 minutos e geralmente
+                As sessões regulares têm duração de 30 a 50 minutos e geralmente
                 ocorrem semanalmente. Durante esse tempo, trabalhamos os
                 objetivos estabelecidos utilizando técnicas e intervenções
                 baseadas na Terapia Cognitivo-Comportamental.
@@ -1872,7 +1860,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Meu Consultório</h2>
-          <p>Conheça o ambiente onde realizo os atendimentos presenciais</p>
+          <p>Conheça o ambiente onde realizo os atendimentos presenciais.</p>
         </div>
 
         <!-- Carrossel de imagens do consultório -->
@@ -1895,6 +1883,13 @@
             <div class="carousel-item">
               <img
                 src="imagens\local-certo3.jpg"
+                class="d-block w-100"
+                alt="Consultório 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imagens\welnesslocal1.jpg"
                 class="d-block w-100"
                 alt="Consultório 3"
               />
@@ -1928,11 +1923,21 @@
 
         <div class="office-info">
           <div class="office-card">
-            <h3><i class="fas fa-map-marker-alt"></i> Localização</h3>
+            <h3>
+              <i class="fas fa-map-marker-alt"></i> Localização Presencial
+            </h3>
+            <p><strong>Viver Mais - Espaço de Cuidados</strong></p>
             <p>Av. dos Jesuítas, 585 - Alto dos Cajueiros</p>
             <p>Macaé - Rio de Janeiro, 27913-410</p>
-            <p>Referência: Próximo ao antigo Shopping de Macaé...</p>
-            <a href="#" target="_blank">Ver no mapa</a>
+            <a href="https://maps.app.goo.gl/SvDC5Tack4Wfz79p9" target="_blank"
+              >Ver no mapa</a
+            >
+            <p><strong>Clínica Wellness Center</strong></p>
+            <p>Av. Atlântica, 2650 - Cavaleiros</p>
+            <p>Macaé - Rio de Janeiro, 27920-390</p>
+            <a href="https://maps.app.goo.gl/opR9TpvB5KRiRWpy5" target="_blank"
+              >Ver no mapa</a
+            >
           </div>
           <div class="office-card">
             <h3><i class="fas fa-info-circle"></i> Informações</h3>
@@ -1943,9 +1948,9 @@
           </div>
           <div class="office-card">
             <h3><i class="fas fa-clock"></i> Horário de Atendimento</h3>
-            <p>Segunda a Sexta: 8h às 20h</p>
-            <p>Sábado: 8h às 12h (sob consulta)</p>
-            <p>Atendimentos online com horários flexíveis</p>
+            <p>Segunda a Sexta: 14h às 21h</p>
+            <p>Sábado: 9h às 12h (sob consulta)</p>
+            <p>Atendimento online com horários flexíveis</p>
           </div>
         </div>
       </div>
@@ -1974,7 +1979,7 @@
               </div>
               <div class="contact-text">
                 <h4>Telefone</h4>
-                <a href="tel:+5522997265481">(22) 99726-5481</a>
+                <a href="tel:+5522997265488">(22) 99726-5488</a>
               </div>
             </div>
             <div class="contact-item">
@@ -1983,7 +1988,7 @@
               </div>
               <div class="contact-text">
                 <h4>WhatsApp</h4>
-                <a href="https://wa.me/5522997265481">(22) 99726-5481</a>
+                <a href="https://wa.me/5522997265488">(22) 99726-5488</a>
               </div>
             </div>
             <div class="contact-item">
@@ -2003,12 +2008,18 @@
               </div>
               <div class="contact-text">
                 <h4>Endereço</h4>
+                <p><strong>Viver Mais - Espaço de Cuidados</strong></p>
                 <p>Av. dos Jesuítas, 585 - Alto dos Cajueiros</p>
                 <p>Macaé - Rio de Janeiro, 27913-410</p>
+                <p><strong>Clínica Wellness Center</strong></p>
+                <p>Av. Atlântica, 2650 - Cavaleiros</p>
+                <p>Macaé - Rio de Janeiro, 27920-390</p>
               </div>
             </div>
             <div class="social-links">
-              <a href="#" class="social-link"
+              <a
+                href="https://www.instagram.com/hayannebalzana.psi"
+                class="social-link"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a href="#" class="social-link"
@@ -2107,7 +2118,7 @@
             <p>Psicóloga Clínica - CRP 05/59872</p>
             <p>
               Especialista em Terapia Cognitivo-Comportamental, atuando no
-              atendimento de adolescentes, adultos e idosos.
+              atendimento de adultos e idosos.
             </p>
           </div>
           <div class="footer-links">
@@ -2124,8 +2135,13 @@
             <h4>Áreas de Atuação</h4>
             <ul>
               <li><a href="#specialties">Ansiedade</a></li>
-              <li><a href="#specialties">Depressão</a></li>
               <li><a href="#specialties">Estresse</a></li>
+              <li><a href="#specialties">Depressão</a></li>
+              <li><a href="#specialties">Autocobrança</a></li>
+              <li><a href="#specialties">Autoconhecimento</a></li>
+              <li><a href="#specialties">Alterações de humor</a></li>
+              <li><a href="#specialties">Medos</a></li>
+              <li><a href="#specialties">Traumas</a></li>
               <li><a href="#specialties">Burnout</a></li>
               <li><a href="#specialties">Relacionamentos</a></li>
             </ul>
@@ -2133,13 +2149,17 @@
           <div class="footer-links">
             <h4>Contato</h4>
             <ul>
-              <li><a href="https://wa.me/5522997265481">(22) 99726-5481</a></li>
+              <li><a href="https://wa.me/5522997265488">(22) 99726-5488</a></li>
               <li>
                 <a href="mailto:hayannebalzana.psi@gmail.com"
                   >hayannebalzana.psi@gmail.com</a
                 >
               </li>
-              <li><a href="#">Instagram</a></li>
+              <li>
+                <a href="https://www.instagram.com/hayannebalzana.psi"
+                  >Instagram</a
+                >
+              </li>
               <li><a href="#">Facebook</a></li>
               <li><a href="#">LinkedIn</a></li>
             </ul>
