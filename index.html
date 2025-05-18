@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hayanne Balzana | Psicóloga Clínica</title>
+    <title>
+      Hayanne Balzana | Psicóloga Clínica em Macaé - TCC | CRP 05/59872
+    </title>
+
+    <!-- Meta tags para SEO -->
+    <meta
+      name="description"
+      content="Hayanne Balzana, Psicóloga Clínica especializada em Terapia Cognitivo-Comportamental (TCC) em Macaé. Atendimento presencial e online para adultos e idosos. CRP 05/59872."
+    />
+    <meta
+      name="keywords"
+      content="psicóloga, terapia, TCC, ansiedade, depressão, estresse, psicoterapia, Macaé, atendimento online, Hayanne Balzana, terapia cognitivo-comportamental"
+    />
+    <meta name="author" content="Hayanne Balzana" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.hayannebalzana.com.br/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hayannebalzana.com.br/" />
+    <meta
+      property="og:title"
+      content="Hayanne Balzana | Psicóloga Clínica - TCC"
+    />
+    <meta
+      property="og:description"
+      content="Psicóloga Clínica especializada em Terapia Cognitivo-Comportamental (TCC). Atendimento presencial e online para adultos e idosos em Macaé."
+    />
+    <meta
+      property="og:image"
+      content="https://www.hayannebalzana.com.br/imagens/H&R-169.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.hayannebalzana.com.br/" />
+    <meta
+      property="twitter:title"
+      content="Hayanne Balzana | Psicóloga Clínica - TCC"
+    />
+    <meta
+      property="twitter:description"
+      content="Psicóloga Clínica especializada em Terapia Cognitivo-Comportamental (TCC). Atendimento presencial e online para adultos e idosos em Macaé."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.hayannebalzana.com.br/imagens/H&R-169.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS e Recursos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -75,6 +128,43 @@
         padding: 0 20px;
       }
 
+      /* Botão Flutuante de WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        left: 30px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        background-color: #20ba5a;
+        color: white;
+        transform: translateY(-5px);
+        text-decoration: none;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
       .btn {
         display: inline-flex;
         align-items: center;
@@ -128,12 +218,8 @@
       }
 
       /* Header and Navigation */
-
-      /* Estilos para o logo no header e footer */
       header {
-        background-color: var(
-          --header-color
-        ); /* Cor do fundo do logo #cab0a2 */
+        background-color: var(--header-color);
         box-shadow: var(--shadow);
         position: fixed;
         width: 100%;
@@ -141,10 +227,11 @@
         left: 0;
         z-index: 1000;
         transition: var(--transition);
+        display: flex;
       }
 
       .nav-links a {
-        color: #ffffff; /* Branco para contrastar com o fundo bege */
+        color: #ffffff;
         font-weight: 500;
       }
 
@@ -158,7 +245,7 @@
 
       /* Logo no footer */
       .footer-logo {
-        height: 70px; /* Um pouco maior no footer */
+        height: 70px;
         width: auto;
         margin-bottom: 15px;
       }
@@ -170,7 +257,7 @@
       }
 
       .footer-about {
-        text-align: center; /* Centraliza o logo no footer */
+        text-align: center;
       }
       .header-scrolled {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -190,11 +277,11 @@
       }
 
       .logo img {
-        height: 85px; /* Aumentado de 55px para 90px */
+        height: 85px;
         width: auto;
         display: block;
         margin: 0;
-        max-width: none; /* Remove o max-width */
+        max-width: none;
       }
 
       .logo h1 {
@@ -269,7 +356,7 @@
         font-size: 42px;
         margin-bottom: 15px;
         color: var(--white);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Sombra sutil no texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
       }
 
       .hero-text h2 {
@@ -310,13 +397,13 @@
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         z-index: 1;
         animation: blob-animate 8s ease-in-out infinite;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra sutil no blob */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       }
 
       .profile-img {
         position: relative;
         z-index: 2;
-        border-radius: 15px; /* Bordas mais arredondadas */
+        border-radius: 15px;
         max-height: 450px;
         object-fit: cover;
         background: linear-gradient(#fff, #fff) padding-box,
@@ -375,16 +462,16 @@
         border-radius: var(--border-radius);
         margin-top: 30px;
         display: flex;
-        align-items: center; /* Já está correto */
+        align-items: center;
         gap: 20px;
       }
       .appointment-info p {
-        margin: 0; /* Remove as margens padrão do parágrafo */
+        margin: 0;
       }
       .appointment-info i {
         font-size: 24px;
         color: var(--secondary-color);
-        display: flex; /* Garante que o ícone tenha comportamento flexbox adequado */
+        display: flex;
         align-items: center;
         justify-content: center;
       }
@@ -773,7 +860,7 @@
         height: 100%;
         object-fit: contain;
         width: 100%;
-        background-color: #f8f5f2; /* Cor de fundo para os espaços vazios */
+        background-color: #f8f5f2;
       }
 
       .carousel-arrow-prev,
@@ -1063,14 +1150,18 @@
       footer {
         background-color: var(--primary-color);
         color: var(--white);
-        padding: 80px 0 30px;
+        padding: 40px 0 30px;
       }
 
       .footer-content {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 40px;
         margin-bottom: 50px;
+      }
+      .footer-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       .footer-about h3 {
@@ -1149,30 +1240,8 @@
       }
 
       /* Responsive Styles */
-      @media screen and (max-width: 1024px) {
-        .container {
-          width: 95%;
-        }
 
-        .hero-content,
-        .about-content,
-        .approach-content,
-        .faq-content,
-        .contact-content {
-          flex-direction: column;
-          gap: 40px;
-        }
-
-        .approach-diagram {
-          grid-template-columns: 1fr;
-        }
-
-        .footer-content {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1230px) {
         .nav-links {
           position: fixed;
           top: 80px;
@@ -1203,6 +1272,40 @@
           font-size: 36px;
         }
 
+        .whatsapp-float {
+          width: 65px;
+          height: 65px;
+          font-size: 35px;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .container {
+          width: 95%;
+        }
+
+        .hero-content,
+        .about-content,
+        .approach-content,
+        .faq-content,
+        .contact-content {
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .approach-diagram {
+          grid-template-columns: 1fr;
+        }
+
+        .footer {
+          padding: 40px 0 30px;
+        }
+        .faq-content {
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
         .step {
           flex-direction: column;
           align-items: center;
@@ -1225,6 +1328,29 @@
           grid-template-columns: 1fr;
           gap: 30px;
         }
+        .faq-content {
+          align-items: center;
+        }
+
+        .footer {
+          padding: 40px 0 30px;
+        }
+        .footer-area {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .whatsapp-float {
+          width: 50px;
+          height: 50px;
+          bottom: 20px;
+          left: 20px;
+          font-size: 25px;
+        }
+
+        /* Ajuste para não sobrepor com o botão de voltar ao topo */
+        .back-to-top {
+          bottom: 20px;
+        }
       }
 
       @media screen and (max-width: 480px) {
@@ -1245,13 +1371,211 @@
         .specialties-grid {
           grid-template-columns: 1fr;
         }
-
+        .footer-area {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
         .faq-question {
           font-size: 16px;
           padding: 15px;
         }
+        .footer {
+          padding: 40px 0 30px;
+        }
       }
     </style>
+
+    <!-- Structured Data para Profissional de Saúde (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Hayanne Balzana - Psicóloga",
+        "image": "https://www.hayannebalzana.com.br/imagens/H&R-169.jpg",
+        "url": "https://www.hayannebalzana.com.br",
+        "telephone": "+5522997265488",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. dos Jesuítas, 585 - Alto dos Cajueiros",
+            "addressLocality": "Macaé",
+            "addressRegion": "RJ",
+            "postalCode": "27913-410",
+            "addressCountry": "BR"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Atlântica, 2650 - Cavaleiros",
+            "addressLocality": "Macaé",
+            "addressRegion": "RJ",
+            "postalCode": "27920-390",
+            "addressCountry": "BR"
+          }
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -22.3728,
+          "longitude": -41.7869
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "14:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "12:00"
+          }
+        ],
+        "priceRange": "$$",
+        "founder": {
+          "@type": "Person",
+          "name": "Hayanne Carvalhido Balzana Bastos",
+          "jobTitle": "Psicóloga Clínica",
+          "description": "Psicóloga Clínica especializada em Terapia Cognitivo-Comportamental (CRP 05/59872)"
+        },
+        "medicalSpecialty": [
+          "Psicologia Clínica",
+          "Terapia Cognitivo-Comportamental"
+        ],
+        "healthcareReportingRequirement": "https://www.crp-05.org.br/",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Psicoterapia",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Psicoterapia Individual",
+                "procedureType": "Terapia Cognitivo-Comportamental"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Terapia Online",
+                "procedureType": "Terapia Cognitivo-Comportamental"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Structured Data para FAQs -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como saber se preciso de psicoterapia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A psicoterapia pode ser benéfica para qualquer pessoa que esteja enfrentando desafios emocionais ou comportamentais que afetam sua qualidade de vida. Se você está experimentando sintomas como ansiedade persistente, tristeza, irritabilidade, problemas de relacionamento, ou dificuldades para lidar com situações estressantes, a terapia pode ajudar. Mesmo sem um problema específico, a terapia pode ser útil para o autoconhecimento e desenvolvimento pessoal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como a psicoterapia pode me ajudar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A psicoterapia oferece um espaço seguro e confidencial para explorar pensamentos, sentimentos e comportamentos. Através dela, você pode desenvolver maior autoconhecimento, identificar padrões disfuncionais, aprender estratégias para lidar com situações difíceis, melhorar suas habilidades de comunicação e relacionamento, e trabalhar no desenvolvimento de uma perspectiva mais saudável e adaptativa para os desafios da vida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a abordagem Cognitivo-Comportamental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Terapia Cognitivo-Comportamental (TCC) parte do princípio de que nossos pensamentos influenciam nossas emoções e comportamentos. Na TCC, trabalhamos identificando pensamentos automáticos negativos e crenças disfuncionais, avaliando sua validade e desenvolvendo pensamentos mais equilibrados e realistas. Também são utilizadas técnicas comportamentais como exposição gradual, ativação comportamental e treinamento de habilidades. É uma abordagem estruturada, colaborativa e focada em objetivos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo dura uma sessão de psicoterapia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As sessões de psicoterapia geralmente têm duração de 50 minutos, sendo realizadas semanalmente. Conforme o progresso do tratamento, a frequência pode ser ajustada para quinzenal ou mensal. A duração total do processo terapêutico varia de acordo com as necessidades individuais, os objetivos estabelecidos e a complexidade das questões trabalhadas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "É possível fazer terapia online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, realizo atendimentos online através de plataformas seguras de videoconferência. A terapia online tem se mostrado tão eficaz quanto a presencial, oferecendo maior flexibilidade e eliminando a necessidade de deslocamento. É necessário apenas ter um dispositivo com conexão à internet, um local privado e tranquilo para a sessão e fones de ouvido para garantir a confidencialidade."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Structured Data para Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Consultório de Psicologia Hayanne Balzana",
+        "image": "https://www.hayannebalzana.com.br/imagens/local-certo1.jpg",
+        "priceRange": "$$",
+        "telephone": "+5522997265488",
+        "email": "hayannebalzana.psi@gmail.com",
+        "url": "https://www.hayannebalzana.com.br",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. dos Jesuítas, 585 - Alto dos Cajueiros",
+            "addressLocality": "Macaé",
+            "addressRegion": "RJ",
+            "postalCode": "27913-410",
+            "addressCountry": "BR"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Atlântica, 2650 - Cavaleiros",
+            "addressLocality": "Macaé",
+            "addressRegion": "RJ",
+            "postalCode": "27920-390",
+            "addressCountry": "BR"
+          }
+        ],
+        "hasMap": "https://maps.app.goo.gl/SvDC5Tack4Wfz79p9",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "14:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "12:00"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -1260,8 +1584,8 @@
         <nav class="navbar">
           <div class="logo">
             <img
-              src="imagens\image-removebg-preview.png"
-              alt="Logo Hayanne Balzana"
+              src="imagens/imagem-logo.png"
+              alt="Logo Hayanne Balzana Psicologia"
               class="header-logo"
             />
           </div>
@@ -1272,7 +1596,6 @@
             <a href="#approach">Abordagem</a>
             <a href="#how-it-works">Como Funciona</a>
             <a href="#faq">Dúvidas</a>
-            <a href="#reviews">Depoimentos</a>
             <a href="#office">Consultório</a>
             <a href="#contact">Contato</a>
           </div>
@@ -1292,7 +1615,12 @@
               <span class="crp-badge">CRP 05/59872</span>
               <h2>PSICÓLOGA CLÍNICA</h2>
             </div>
-            <h1>Hayanne Balzana</h1>
+            <h1>
+              Hayanne Balzana
+              <span class="sr-only">
+                Psicóloga em Macaé | Atendimento Presencial e Online</span
+              >
+            </h1>
             <p>
               Meu propósito é <span class="highlight">ajudar você</span> a ter
               mais qualidade de vida com saúde mental e emocional.
@@ -1310,8 +1638,8 @@
             <div class="bg-overlay"></div>
             <div class="blob-shape"></div>
             <img
-              src="imagens\H&R-169.jpg"
-              alt="Psicóloga Hayanne Balzana"
+              src="imagens/H&R-169.jpg"
+              alt="Hayanne Balzana - Psicóloga Clínica especialista em Terapia Cognitivo-Comportamental"
               class="profile-img"
             />
           </div>
@@ -1341,7 +1669,10 @@
         </div>
         <div class="about-content">
           <div class="about-image">
-            <img src="imagens\H&R-171.jpg" alt="Hayanne Balzana Psicóloga" />
+            <img
+              src="imagens/H&R-171.jpg"
+              alt="Hayanne Balzana - Psicóloga Clínica em Macaé"
+            />
           </div>
           <div class="about-text">
             <h2>Hayanne Carvalhido Balzana Bastos</h2>
@@ -1717,8 +2048,8 @@
         <div class="faq-content">
           <div class="faq-image">
             <img
-              src="imagens\como-funciona-a-terapia-1-1-removebg-preview.png"
-              alt="Ilustração de dúvidas sobre terapia"
+              src="imagens/como-funciona-a-terapia.png"
+              alt="Como funciona a terapia com Hayanne Balzana"
             />
           </div>
           <div class="faq-questions">
@@ -1800,12 +2131,11 @@
               <div class="faq-answer">
                 <p>
                   O pagamento pode ser realizado através de transferência
-                  bancária, PIX ou cartão de crédito. O valor e as condições de
-                  pagamento são combinados no início do processo terapêutico.
-                  Trabalho com pacotes mensais ou pagamentos por sessão,
-                  conforme a preferência do cliente. Algumas operadoras de plano
-                  de saúde também podem oferecer reembolso para sessões de
-                  psicoterapia.
+                  bancária e PIX. O valor e as condições de pagamento são
+                  combinados no início do processo terapêutico. Trabalho com
+                  pacotes mensais ou pagamentos por sessão, conforme a
+                  preferência do cliente. Algumas operadoras de plano de saúde
+                  também podem oferecer reembolso para sessões de psicoterapia.
                 </p>
               </div>
             </div>
@@ -1868,30 +2198,30 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="imagens\local-certo1.jpg"
+                src="imagens/local-certo1.jpg"
                 class="d-block w-100"
-                alt="Consultório 1"
+                alt="Consultório Hayanne Balzana - Ambiente acolhedor em Macaé"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="imagens\local-certo2.jpg"
+                src="imagens/local-certo2.jpg"
                 class="d-block w-100"
-                alt="Consultório 2"
+                alt="Sala de atendimento psicológico em Macaé - Hayanne Balzana"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="imagens\local-certo3.jpg"
+                src="imagens/local-certo3.jpg"
                 class="d-block w-100"
-                alt="Consultório 3"
+                alt="Espaço para terapia com Hayanne Balzana em Macaé"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="imagens\welnesslocal1.jpg"
+                src="imagens/welnesslocal1.jpg"
                 class="d-block w-100"
-                alt="Consultório 3"
+                alt="Clínica Wellness Center - Local de atendimento da psicóloga Hayanne Balzana"
               />
             </div>
           </div>
@@ -2025,14 +2355,20 @@
               <a href="#" class="social-link"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#" class="social-link"
+              <a
+                href="https://br.linkedin.com/in/hayannebalzana"
+                class="social-link"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
           </div>
           <div class="contact-form">
             <h3>Agende sua Consulta</h3>
-            <form id="contactForm">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xanodydl"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="name">Nome Completo</label>
                 <input
@@ -2121,51 +2457,52 @@
               atendimento de adultos e idosos.
             </p>
           </div>
-          <div class="footer-links">
-            <h4>Links Rápidos</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Sobre Mim</a></li>
-              <li><a href="#specialties">Especialidades</a></li>
-              <li><a href="#approach">Abordagem</a></li>
-              <li><a href="#how-it-works">Como Funciona</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Áreas de Atuação</h4>
-            <ul>
-              <li><a href="#specialties">Ansiedade</a></li>
-              <li><a href="#specialties">Estresse</a></li>
-              <li><a href="#specialties">Depressão</a></li>
-              <li><a href="#specialties">Autocobrança</a></li>
-              <li><a href="#specialties">Autoconhecimento</a></li>
-              <li><a href="#specialties">Alterações de humor</a></li>
-              <li><a href="#specialties">Medos</a></li>
-              <li><a href="#specialties">Traumas</a></li>
-              <li><a href="#specialties">Burnout</a></li>
-              <li><a href="#specialties">Relacionamentos</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Contato</h4>
-            <ul>
-              <li><a href="https://wa.me/5522997265488">(22) 99726-5488</a></li>
-              <li>
-                <a href="mailto:hayannebalzana.psi@gmail.com"
-                  >hayannebalzana.psi@gmail.com</a
-                >
-              </li>
-              <li>
-                <a href="https://www.instagram.com/hayannebalzana.psi"
-                  >Instagram</a
-                >
-              </li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
+          <div class="footer-area">
+            <div class="footer-links">
+              <h4>Links Rápidos</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#specialties">Especialidades</a></li>
+                <li><a href="#approach">Abordagem</a></li>
+                <li><a href="#how-it-works">Como Funciona</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Áreas de Atuação</h4>
+              <ul>
+                <li><a href="#specialties">Ansiedade</a></li>
+                <li><a href="#specialties">Estresse e Depressão</a></li>
+                <li><a href="#specialties">Autocobrança</a></li>
+                <li><a href="#specialties">Autoconhecimento</a></li>
+                <li><a href="#specialties">Medos e Traumas</a></li>
+                <li><a href="#specialties">Burnout</a></li>
+                <li><a href="#specialties">Relacionamentos</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Contato</h4>
+              <ul>
+                <li>
+                  <a href="https://wa.me/5522997265488">(22) 99726-5488</a>
+                </li>
+                <li>
+                  <a href="mailto:hayannebalzana.psi@gmail.com"
+                    >hayannebalzana.psi@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/hayannebalzana.psi"
+                    >Instagram</a
+                  >
+                </li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom">d
           <p>
             &copy; 2025 - Hayanne Balzana | Psicóloga Clínica. Todos os direitos
             reservados.
@@ -2174,10 +2511,22 @@
       </div>
     </footer>
 
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/5522997265488"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
       <i class="fas fa-arrow-up"></i>
     </div>
+
+    <!-- Sitemap XML -->
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
 
     <!-- JavaScript -->
     <script>
@@ -2265,23 +2614,21 @@
       const contactForm = document.getElementById("contactForm");
       if (contactForm) {
         contactForm.addEventListener("submit", function (e) {
-          e.preventDefault();
+          // Não use e.preventDefault() se quiser que o formulário seja enviado para o Formspree
 
           // Get form values
           const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const phone = document.getElementById("phone").value;
-          const subject = document.getElementById("subject").value;
-          const message = document.getElementById("message").value;
 
-          // Here you would typically send the form data to a server
-          // For demonstration, we'll just show an alert
-          alert(
-            `Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.`
-          );
+          // Mostrar alerta antes de submeter o formulário
+          setTimeout(function () {
+            alert(
+              `Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.`
+            );
 
-          // Reset form
-          contactForm.reset();
+            // O formulário será automaticamente resetado após o redirecionamento
+          }, 200);
+
+          // O formulário continuará seu envio normal para o serviço configurado
         });
       }
     </script>
